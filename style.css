@@ -33,10 +33,13 @@ button {
   border-radius: 1rem;
   background: firebrick;
   color: powderblue;
+  transition: transform 0.3s, background-color 0.1s;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: #430f0f;
+  transform: scale(1.1);
 }
 
 .numbers {
@@ -73,7 +76,9 @@ button:hover {
   border-width: 20px;
 }
 
-.operations {
+.operations,
+.advanced-operations,
+.extraCharacters {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -82,4 +87,11 @@ button:hover {
 
 .operation {
   background: rgb(39, 123, 95);
+}
+
+@media (max-width: 600px) {
+  .sqrt,
+  .square {
+    display: none;
+  }
 }

@@ -11,6 +11,7 @@
       <div class="display">
         <input type="text" id="display" disabled />
       </div>
+
       <div class="numbers">
         <button onclick="number(1)">1</button>
         <button onclick="number(2)">2</button>
@@ -24,15 +25,26 @@
         <button onclick="number(0)">0</button>
         <button class="enter" onclick="submit()">ENTER</button>
       </div>
+
       <div class="operations">
         <button class="operation" onclick="add()" id="add">+</button>
         <button class="operation" onclick="subtract()" id="subtract">-</button>
         <button class="operation" onclick="multiply()" id="multiply">*</button>
         <button class="operation" onclick="divide()" id="divide">/</button>
       </div>
+
       <div class="advanced-operations">
-        <button class="advanced-operation" onclick="sqrt()">√</button>
-        <button class="advanced-operation" onclick="cube()">∛</button>
+        <button class="advanced-operation" onclick="square()">x²</button>
+        <button class="advanced-operation" onclick="power()">xⁿ</button>
+        <button class="advanced-operation" onclick="sqrt()">√x</button>
+        <button class="advanced-operation" onclick="cbrt()">∛x</button>
+      </div>
+
+      <div class="extraCharacters">
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class="decimal" onclick="decimal()">.</button>
+        <button class="backspace" onclick="backspace()">←</button>
+        <button class="plus/minus" onclick="symbol()">+/-</button>
       </div>
     </div>
     <script src="script.js"></script>
