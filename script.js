@@ -9,6 +9,8 @@ function number(num) {
   console.log(cInput);
 }
 
+// Basic Operations
+
 function add() {
   pInput = cInput;
   operator = "+";
@@ -65,4 +67,16 @@ function submit() {
   currentInput = result;
   operator = "";
   document.getElementById("display").value = result;
+}
+
+// Sqrt and Cube Root Independent Functions
+
+function sqrt() {
+  cInput = Math.sqrt(parseFloat(cInput));
+  document.getElementById("display").value = cInput;
+}
+
+function cube() {
+  cInput = Math.cbrt(parseFloat(cInput));
+  document.getElementById("display").value = cInput;
 }
