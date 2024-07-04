@@ -88,10 +88,3 @@ button:hover {
 .operation {
   background: rgb(39, 123, 95);
 }
-
-@media (max-width: 600px) {
-  .sqrt,
-  .square {
-    display: none;
-  }
-}
